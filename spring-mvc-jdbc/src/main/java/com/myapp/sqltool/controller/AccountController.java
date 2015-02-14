@@ -26,6 +26,7 @@ public class AccountController {
 	public ModelAndView show_users(Model model) {
 		List<Student> students = studentImpl.getAllstudents();
 		ModelAndView modelAndView = new ModelAndView("students");
+		model.addAttribute("current", "students");
 		modelAndView.addObject("students", students);
 		return modelAndView;
 	}
@@ -34,6 +35,7 @@ public class AccountController {
 	public ModelAndView manage_account(Model model) {
 		List<Student> students = studentImpl.getAllstudents();
 		ModelAndView modelAndView = new ModelAndView("account");
+		model.addAttribute("current", "shopping");
 		modelAndView.addObject("students", students);
 		return modelAndView;
 	}
@@ -41,6 +43,7 @@ public class AccountController {
 	@RequestMapping(value = "/remove/{id}.html", method = RequestMethod.GET)
 	public String manage_account_remove(@PathVariable("id") Integer id,
 			Model model) {
+		model.addAttribute("current", "shopping");
 		boolean success = studentImpl.deletestudents(id);
 		return "redirect:/account.html?success=" + success;
 	}
@@ -50,6 +53,7 @@ public class AccountController {
 			Model model) {
 		Student student = studentImpl.getOnestudents(id);
 		ModelAndView modelAndView = new ModelAndView("account");
+		model.addAttribute("current", "shopping");
 		modelAndView.addObject("studentdata", student);
 		return modelAndView;
 	}

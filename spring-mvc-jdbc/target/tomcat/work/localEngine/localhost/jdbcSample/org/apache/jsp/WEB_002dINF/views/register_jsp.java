@@ -145,21 +145,21 @@ public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t\thref=\"");
       if (_jspx_meth_spring_005furl_005f3(_jspx_page_context))
         return;
-      out.write("\">Students</a></li>\n");
+      out.write("\">Students List</a></li>\n");
       out.write("\t\t\t\t<li class=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${current == 'shopping' ? 'active' : ''}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("\"><a\n");
       out.write("\t\t\t\t\thref=\"");
       if (_jspx_meth_spring_005furl_005f4(_jspx_page_context))
         return;
-      out.write("\">manage</a></li>\n");
+      out.write("\">Manage Students</a></li>\n");
       out.write("\t\t\t\t<li class=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${current == 'shopping' ? 'active' : ''}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${current == 'sqlQuery' ? 'active' : ''}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("\"><a\n");
       out.write("\t\t\t\t\thref=\"");
       if (_jspx_meth_spring_005furl_005f5(_jspx_page_context))
         return;
-      out.write("\">manage</a></li>\n");
+      out.write("\">Sql Query</a></li>\n");
       out.write("\t\t\t</ul>\n");
       out.write("\n");
       out.write("\t\t</div>\n");
@@ -471,7 +471,7 @@ public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_spring_005furl_005f5.setPageContext(_jspx_page_context);
     _jspx_th_spring_005furl_005f5.setParent(null);
     // /WEB-INF/views/header.jsp(57,11) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_spring_005furl_005f5.setValue("/account.html");
+    _jspx_th_spring_005furl_005f5.setValue("/sqlQuery.html");
     int[] _jspx_push_body_count_spring_005furl_005f5 = new int[] { 0 };
     try {
       int _jspx_eval_spring_005furl_005f5 = _jspx_th_spring_005furl_005f5.doStartTag();

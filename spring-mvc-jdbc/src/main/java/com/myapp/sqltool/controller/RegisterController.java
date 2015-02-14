@@ -52,6 +52,7 @@ public class RegisterController {
 	@RequestMapping(value = "/register.html", method = RequestMethod.GET)
 	public ModelAndView Register(Model model) {
 		ModelAndView modelAndView = new ModelAndView("register");
+		model.addAttribute("current", "register");
 		return modelAndView;
 	}
 

@@ -45,16 +45,16 @@
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li class="${current == 'index' ? 'active' : ''}"><a
+				<li class="${current == '' ? 'active' : ''}"><a
 					href='<spring:url value="/" />'>Home</a></li>
 				<li class="${current == 'register' ? 'active' : ''}"><a
 					href="<spring:url value="/register.html" />">Register</a></li>
 				<li class="${current == 'students' ? 'active' : ''}"><a
-					href="<spring:url value="/student.html" />">Students</a></li>
+					href="<spring:url value="/student.html" />">Students List</a></li>
 				<li class="${current == 'shopping' ? 'active' : ''}"><a
-					href="<spring:url value="/account.html" />">manage</a></li>
-				<li class="${current == 'shopping' ? 'active' : ''}"><a
-					href="<spring:url value="/account.html" />">manage</a></li>
+					href="<spring:url value="/account.html" />">Manage Students</a></li>
+				<li class="${current == 'sqlQuery' ? 'active' : ''}"><a
+					href="<spring:url value="/sqlQuery.html" />">Sql Query</a></li>
 			</ul>
 
 		</div>

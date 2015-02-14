@@ -22,9 +22,18 @@
 		<property name="username" value="root" />
 		<property name="password" value="root" />
 	</bean>
-	
-	<bean name="jdbcTemplate" id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-		<property name="dataSource" ref="dataSource"/>	
+
+	<bean name="jdbcTemplate" id="jdbcTemplate"
+		class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource" />
 	</bean>
+	
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename" value="message" />
+	</bean>
+
+	<bean id="sqlQueryValidator" class="com.myapp.sqltool.validator.SqlQueryValidator" />
+
 
 </beans>

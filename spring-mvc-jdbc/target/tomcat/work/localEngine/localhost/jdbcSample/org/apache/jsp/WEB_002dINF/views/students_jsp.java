@@ -129,15 +129,9 @@ public final class students_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\tTool</a>\n");
       out.write("\t\t</div>\n");
       out.write("\t\t<div class=\"navbar-collapse collapse\">\n");
-      out.write("\t\t<script type=\"text/javascript\">\n");
-      out.write("\t\talert(\"value : \" + ");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${current}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write(");\n");
-      out.write("\t\t</script>\n");
-      out.write("\n");
       out.write("\t\t\t<ul class=\"nav navbar-nav\">\n");
       out.write("\t\t\t\t<li class=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${current == 'index' ? 'active' : ''}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${current == '' ? 'active' : ''}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("\"><a\n");
       out.write("\t\t\t\t\thref='");
       if (_jspx_meth_spring_005furl_005f1(_jspx_page_context))
@@ -156,21 +150,21 @@ public final class students_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t\thref=\"");
       if (_jspx_meth_spring_005furl_005f3(_jspx_page_context))
         return;
-      out.write("\">Students</a></li>\n");
+      out.write("\">Students List</a></li>\n");
       out.write("\t\t\t\t<li class=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${current == 'shopping' ? 'active' : ''}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("\"><a\n");
       out.write("\t\t\t\t\thref=\"");
       if (_jspx_meth_spring_005furl_005f4(_jspx_page_context))
         return;
-      out.write("\">manage</a></li>\n");
+      out.write("\">Manage Students</a></li>\n");
       out.write("\t\t\t\t<li class=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${current == 'shopping' ? 'active' : ''}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${current == 'sqlQuery' ? 'active' : ''}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("\"><a\n");
       out.write("\t\t\t\t\thref=\"");
       if (_jspx_meth_spring_005furl_005f5(_jspx_page_context))
         return;
-      out.write("\">manage</a></li>\n");
+      out.write("\">Sql Query</a></li>\n");
       out.write("\t\t\t</ul>\n");
       out.write("\n");
       out.write("\t\t</div>\n");
@@ -239,7 +233,7 @@ public final class students_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.UrlTag _jspx_th_spring_005furl_005f1 = (org.springframework.web.servlet.tags.UrlTag) _005fjspx_005ftagPool_005fspring_005furl_0026_005fvalue_005fnobody.get(org.springframework.web.servlet.tags.UrlTag.class);
     _jspx_th_spring_005furl_005f1.setPageContext(_jspx_page_context);
     _jspx_th_spring_005furl_005f1.setParent(null);
-    // /WEB-INF/views/header.jsp(53,11) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/views/header.jsp(49,11) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_spring_005furl_005f1.setValue("/");
     int[] _jspx_push_body_count_spring_005furl_005f1 = new int[] { 0 };
     try {
@@ -266,7 +260,7 @@ public final class students_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.UrlTag _jspx_th_spring_005furl_005f2 = (org.springframework.web.servlet.tags.UrlTag) _005fjspx_005ftagPool_005fspring_005furl_0026_005fvalue_005fnobody.get(org.springframework.web.servlet.tags.UrlTag.class);
     _jspx_th_spring_005furl_005f2.setPageContext(_jspx_page_context);
     _jspx_th_spring_005furl_005f2.setParent(null);
-    // /WEB-INF/views/header.jsp(55,11) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/views/header.jsp(51,11) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_spring_005furl_005f2.setValue("/register.html");
     int[] _jspx_push_body_count_spring_005furl_005f2 = new int[] { 0 };
     try {
@@ -293,7 +287,7 @@ public final class students_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.UrlTag _jspx_th_spring_005furl_005f3 = (org.springframework.web.servlet.tags.UrlTag) _005fjspx_005ftagPool_005fspring_005furl_0026_005fvalue_005fnobody.get(org.springframework.web.servlet.tags.UrlTag.class);
     _jspx_th_spring_005furl_005f3.setPageContext(_jspx_page_context);
     _jspx_th_spring_005furl_005f3.setParent(null);
-    // /WEB-INF/views/header.jsp(57,11) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/views/header.jsp(53,11) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_spring_005furl_005f3.setValue("/student.html");
     int[] _jspx_push_body_count_spring_005furl_005f3 = new int[] { 0 };
     try {
@@ -320,7 +314,7 @@ public final class students_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.UrlTag _jspx_th_spring_005furl_005f4 = (org.springframework.web.servlet.tags.UrlTag) _005fjspx_005ftagPool_005fspring_005furl_0026_005fvalue_005fnobody.get(org.springframework.web.servlet.tags.UrlTag.class);
     _jspx_th_spring_005furl_005f4.setPageContext(_jspx_page_context);
     _jspx_th_spring_005furl_005f4.setParent(null);
-    // /WEB-INF/views/header.jsp(59,11) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/views/header.jsp(55,11) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_spring_005furl_005f4.setValue("/account.html");
     int[] _jspx_push_body_count_spring_005furl_005f4 = new int[] { 0 };
     try {
@@ -347,8 +341,8 @@ public final class students_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.springframework.web.servlet.tags.UrlTag _jspx_th_spring_005furl_005f5 = (org.springframework.web.servlet.tags.UrlTag) _005fjspx_005ftagPool_005fspring_005furl_0026_005fvalue_005fnobody.get(org.springframework.web.servlet.tags.UrlTag.class);
     _jspx_th_spring_005furl_005f5.setPageContext(_jspx_page_context);
     _jspx_th_spring_005furl_005f5.setParent(null);
-    // /WEB-INF/views/header.jsp(61,11) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_spring_005furl_005f5.setValue("/account.html");
+    // /WEB-INF/views/header.jsp(57,11) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_spring_005furl_005f5.setValue("/sqlQuery.html");
     int[] _jspx_push_body_count_spring_005furl_005f5 = new int[] { 0 };
     try {
       int _jspx_eval_spring_005furl_005f5 = _jspx_th_spring_005furl_005f5.doStartTag();
