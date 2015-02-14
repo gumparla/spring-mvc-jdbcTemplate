@@ -199,7 +199,7 @@ public final class queryUtility_jsp extends org.apache.jasper.runtime.HttpJspBas
       // /WEB-INF/views/queryUtility.jsp(9,4) name = commandName type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
       _jspx_th_form_005fform_005f0.setCommandName("sqlQuerySearch");
       // /WEB-INF/views/queryUtility.jsp(9,4) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-      _jspx_th_form_005fform_005f0.setAction("/jdbcSample/submitQuery.html");
+      _jspx_th_form_005fform_005f0.setAction("submitQuery.html");
       // /WEB-INF/views/queryUtility.jsp(9,4) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
       _jspx_th_form_005fform_005f0.setMethod("POST");
       int[] _jspx_push_body_count_form_005fform_005f0 = new int[] { 0 };

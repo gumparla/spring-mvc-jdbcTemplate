@@ -7,7 +7,7 @@
 			Populate the Query to be executed
 			<h3>
 				<form:form class="form-horizontal" role="form"
-					commandName="sqlQuerySearch" action="/jdbcSample/submitQuery.html"
+					commandName="sqlQuerySearch" action="submitQuery.html"
 					method="POST">
 
 					<div class="*form-group">
@@ -33,13 +33,19 @@
 						<table class="table">
 							<thead>
 								<tr>
-									<c:forEach items="${sqlQuerySearch.headerNames}" var="header">
-										<th><c:out value="${header}" /></th>
+									<c:forEach items="${sqlQuerySearch.headerNames}" var="colHeader">
+										<th><c:out value="${colHeader}" /></th>
 									</c:forEach>
 								</tr>
 							</thead>
 							<tbody>
-								<tr><td>test</td></tr>
+								<c:forEach items="${sqlQuerySearch.results}" var="record">
+									<tr>
+										<c:forEach items="${record.value}" var="colValue">
+											<td><c:out value="${colValue}"></c:out></td>
+										</c:forEach>
+									</tr>
+								</c:forEach>
 							</tbody>
 						</table>
 					</div>

@@ -31,7 +31,7 @@
 		<c:if test="${not empty studentdata}">
 
 			<form class="form-horizontal" role="form"
-				action="/jdbctraining/submitupdateddata.html" method="POST">
+				action="<%=request.getContextPath()%>/submitupdateddata.html" method="POST">
 
 
 				<form:errors path="name" cssClass="error" />

@@ -126,7 +126,7 @@ public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t<div class=\"navbar-collapse collapse\">\n");
       out.write("\t\t\t<ul class=\"nav navbar-nav\">\n");
       out.write("\t\t\t\t<li class=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${current == 'index' ? 'active' : ''}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${current == '' ? 'active' : ''}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("\"><a\n");
       out.write("\t\t\t\t\thref='");
       if (_jspx_meth_spring_005furl_005f1(_jspx_page_context))

@@ -205,7 +205,9 @@ public final class account_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\r\n");
           out.write("\r\n");
           out.write("\t\t\t<form class=\"form-horizontal\" role=\"form\"\r\n");
-          out.write("\t\t\t\taction=\"/jdbctraining/submitupdateddata.html\" method=\"POST\">\r\n");
+          out.write("\t\t\t\taction=\"");
+          out.print(request.getContextPath());
+          out.write("/submitupdateddata.html\" method=\"POST\">\r\n");
           out.write("\r\n");
           out.write("\r\n");
           out.write("\t\t\t\t");

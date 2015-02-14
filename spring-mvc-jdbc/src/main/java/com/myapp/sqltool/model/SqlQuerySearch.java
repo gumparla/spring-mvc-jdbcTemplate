@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
 public class SqlQuerySearch {
 
 	public String sqlQuery;
@@ -41,5 +44,10 @@ public class SqlQuerySearch {
 
 	public void setSqlQuery(String sqlQuery) {
 		this.sqlQuery = sqlQuery;
+	}
+	
+	@Override
+	public String toString() {
+		return ToStringBuilder.reflectionToString(this, ToStringStyle.SHORT_PREFIX_STYLE);
 	}
 }

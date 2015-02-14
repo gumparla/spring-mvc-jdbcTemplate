@@ -25,19 +25,18 @@ public class SqlQueryDAOImpl implements SqlQueryDAO {
 		jdbcTemplate.query(sqlQuery, new RowCallbackHandler() {
 			public void processRow(java.sql.ResultSet rs)
 					throws java.sql.SQLException {
-				int columnCount = 0;
+				int columnCount = sqlQuerySearch.getHeaderNames().size();
 				List<String> cols = null;
 				if (CollectionUtils.isEmpty(sqlQuerySearch.getHeaderNames())) {
 					ResultSetMetaData resultSetMetaData = rs.getMetaData();
 					columnCount = resultSetMetaData.getColumnCount();
 					for (int i = 1; i <= columnCount; i++) {
 						System.out.println("Header Name	-" + resultSetMetaData.getColumnName(i));
-						System.out.println("Column Type - " + resultSetMetaData.getColumnType(i));
 						sqlQuerySearch.addHeaderName(resultSetMetaData
 								.getColumnName(i).toUpperCase());
 					}
-					cols = new ArrayList<String>(columnCount);
 				}
+				cols = new ArrayList<String>(columnCount);
 				for (int i = 1; i <= columnCount; i++) {
 					cols.add(rs.getString(i));
 				}

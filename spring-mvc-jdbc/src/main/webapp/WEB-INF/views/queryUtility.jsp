@@ -7,7 +7,7 @@
 			Populate the Query to be executed
 			<h3>
 				<form:form class="form-horizontal" role="form"
-					commandName="sqlQuerySearch" action="/jdbcSample/submitQuery.html"
+					commandName="sqlQuerySearch" action="submitQuery.html"
 					method="POST">
 
 					<div class="*form-group">
